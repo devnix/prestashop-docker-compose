@@ -11,25 +11,6 @@ RUN yes | pecl install xdebug \
     && echo "upload_max_filesize=64M" >> /usr/local/etc/php/conf.d/uploads.ini \
     && echo "post_max_size=64M" >> /usr/local/etc/php/conf.d/uploads.ini \
     && echo "max_execution_time=600" >> /usr/local/etc/php/conf.d/uploads.ini \
-    && echo "max_input_vars=10000" >> /usr/local/etc/php/conf.d/custom.ini
-
-CMD    echo "                                              \`,;''';,"  \
-    && echo "                                          \`+####+'''++" \
-    && echo "                                         +##;         " \
-    && echo "                                        ##########;.  " \
-    && echo "                                      .####,\`\`\`\`.:###." \
-    && echo "                                     :#####:       ###" \
-    && echo "                                    .##' ,###+;,,;+##;" \
-    && echo "           :######+\`                '##\`    ,'+##+',  " \
-    && echo "          '##,   '##,               +##               " \
-    && echo "          +##\`    ###     .;+############:            " \
-    && echo "          \`###,  \`##+,'####+',.        ,###:          " \
-    && echo "            ,####+####+:\`                +##\`         " \
-    && echo "             :+###'.                     .##:         " \
-    && echo "         \`'###+,                         .##,         " \
-    && echo "      .'###'\`    ####                    ;##\`         " \
-    && echo "   \`'###;\`       \`;;\`                    +##          " \
-    && echo " ,##########################################           "\
-    && echo "                                                    "\
-    && echo "        Prestashop - Development version  "\
-    && echo ""
+    && echo "max_input_vars=10000" >> /usr/local/etc/php/conf.d/custom.ini \
+    && echo "error_reporting-1" >> /usr/local/etc/php/conf.d/custom.ini \
+    && echo "display_errors = On" >> /usr/local/etc/php/conf.d/custom.ini
