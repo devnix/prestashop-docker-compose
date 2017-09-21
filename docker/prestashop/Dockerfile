@@ -14,3 +14,6 @@ RUN yes | pecl install xdebug \
     && echo "max_input_vars=10000" >> /usr/local/etc/php/conf.d/custom.ini \
     && echo "error_reporting-1" >> /usr/local/etc/php/conf.d/custom.ini \
     && echo "display_errors = On" >> /usr/local/etc/php/conf.d/custom.ini
+
+RUN usermod -u 1000 www-data
+RUN chown 1000 /var/www -R
