@@ -15,5 +15,7 @@ RUN yes | pecl install xdebug-2.5.5 \
     && echo "error_reporting-1" >> /usr/local/etc/php/conf.d/custom.ini \
     && echo "display_errors = On" >> /usr/local/etc/php/conf.d/custom.ini
 
+RUN pecl install xdebug-2.5.5
+
 RUN usermod -u 1000 www-data
 RUN chown 1000 /var/www -R
