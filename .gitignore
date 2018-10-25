@@ -30,3 +30,9 @@ admin-dev/import/
 download/
 /img/*
 upload/
+
+
+# Ignore everything in the root except modules, themes and override.
+src/modules/.gitkeep
+src/themes/.gitkeep
+src/override/.gitkeep
